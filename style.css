@@ -1,0 +1,164 @@
+:root{
+
+ --Desaturated-Red: hsl(0, 36%, 70%);
+--soft-Red: hsl(0, 93%, 68%);
+--Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    height:100%;
+    width: 100%;
+    /* background: url("./images/bg-pattern-desktop.svg"); */
+    background-color: black;
+
+}
+.container{
+    display: flex;
+    height:30em;
+    width: 80%;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+background-color: beige;
+  
+}
+.left{
+    flex: 60%;  
+}
+.right{
+
+    flex: 40%   
+}
+.hero-desktop{
+    height:30em;
+    width: 100%;
+
+}
+.hero-mobile{
+    display: none;
+      }
+.left-content{
+    margin:2.5em 6em 2em 6em;
+}
+.logo{
+height:1.5em;
+/* margin-bottom: 50px; */
+}
+.main-heading{
+    font-size: 3em;
+    line-height: 50px;
+    font-weight:500;
+    color:hsl(0, 6%, 24%) ;
+    margin-bottom: 20px;
+    padding-right: 2em;;
+    text-transform: uppercase;
+}
+.header-title-span{
+    font-weight:100; 
+    color:  hsl(0, 36%, 70%);
+}
+.main-content{
+    font-size: 12px;
+    color:  hsl(0, 36%, 70%);
+    padding-right: 11em;;
+    line-height: 20px;
+}
+.buttons{
+    display:flex;
+    margin-top: 2em;
+}
+.button{
+width: 15rem;
+border-radius: 20px;
+background: none;
+border: solid 0.5px  hsl(0, 36%, 70%);
+padding: 10px;
+cursor: pointer;
+}
+.button:focus{
+    outline: none;
+}
+.icon-arow{
+    height:15px;
+}
+.button-content{
+    margin-left: -12rem;
+    font-size: 12px;
+    color:  hsl(0, 36%, 70%);
+}
+.arrow{
+    background: hsl(0, 93%, 68%);
+    border: none;
+    border-radius: 20px;
+    width: 5rem;
+    padding: 10px;
+    margin-left: -3rem;
+    cursor: pointer;
+}  
+
+/* let me design the media Qeries for the mobile size  */
+@media(max-width:375px){
+    body{
+     
+        overflow:visible;
+        margin: 0;
+        padding: 0;
+        height:100%;
+        width: 100%;
+        background-color: beige;
+    
+    }
+    .container{
+        display: block;
+        margin: 0;
+        padding: 0;
+        height:100%;
+        width: 100%;
+   
+    }
+
+   .hero-desktop{
+  display: none;
+    } 
+     
+    .hero-mobile{
+        display: block;
+         margin:1em 0em 0em 0em ;
+          }
+          .logo{
+            height:1.3em;
+         margin-left: 2em;
+            }
+            .left-content{
+                margin:2.5em 1em 0em 0em;
+            }  
+            .main-heading{
+                font-size: 2.7em;
+                line-height: 40px;
+                text-align: center;
+                padding-right: 1em;
+                padding-left: 1em;
+            }      
+    
+     .main-content{
+        font-size: 12px;
+        padding-right: 5em;
+        padding-left: 5em;
+        line-height: 20px;
+        text-align: center;
+    }
+    .button{
+        width: 13rem;
+        margin-left: 4rem;;
+        margin-bottom: 5em;
+        cursor: pointer;
+        }
+        .arrow{
+            width: 4rem;
+            cursor: pointer;
+        }  
+ 
+}
